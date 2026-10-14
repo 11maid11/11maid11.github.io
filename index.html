@@ -53,9 +53,10 @@
     .info { flex: 1; min-width: 0; }
     .info h2 { margin: 0; font-size: 1.1rem; }
     .info p { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
-    .action { flex: none; }
+    .action { flex: none; display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
+    .btn.alt { background: var(--badge); color: var(--accent); }
     .btn {
-      display: inline-block; padding: 8px 14px; border-radius: 999px;
+      display: inline-block; text-align: center; padding: 8px 14px; border-radius: 999px;
       background: var(--accent); color: #fff; text-decoration: none;
       font-size: 0.9rem; font-weight: 600; white-space: nowrap;
     }
@@ -69,7 +70,7 @@
     footer a { color: inherit; }
     @media (max-width: 520px) {
       .app { flex-wrap: wrap; }
-      .action { width: 100%; padding-left: 88px; }
+      .action { width: 100%; padding-left: 88px; flex-direction: row; flex-wrap: wrap; }
     }
   </style>
 </head>
@@ -94,9 +95,24 @@
         <img class="icon" src="https://play-lh.googleusercontent.com/Jxn8hc3neAyQsrHiqk6-kehUzeeg9VMTRzgjAT6J6x9K56WMFr4453n_pZkGwM2LZ7d7XDFfpb8FGhoTaXbUBls=s144" alt="Anychord icon">
         <div class="info">
           <h2>Anychord: Chord Finder</h2>
-          <p>Turn any song into chords and play along.</p>
+          <p>Paste a YouTube link, type a song title or upload an MP3 and get the chords in time with the music.</p>
         </div>
-        <div class="action"><a class="btn" href="https://play.google.com/store/apps/details?id=net.anychord.app">Google Play</a></div>
+        <div class="action">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=net.anychord.app">Google Play</a>
+          <a class="btn alt" href="https://anychord.net">Website</a>
+        </div>
+      </article>
+
+      <article class="app">
+        <img class="icon" src="https://play-lh.googleusercontent.com/TCl9SzLCKR_MwLgPUo8VfqJcJavbCd1NjT5tbC81IpxDa-1vx6YwRO7cn-nbuc9eIyzuII4r70dOE6EsBMej=s144" alt="Clipelo icon">
+        <div class="info">
+          <h2>Clipelo - Video Editor</h2>
+          <p>Trim, caption and export video on your phone, or compress video right in your browser. No watermark, no sign-up.</p>
+        </div>
+        <div class="action">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.mrrak.clipelo">Google Play</a>
+          <a class="btn alt" href="https://clipelo.com">Website</a>
+        </div>
       </article>
 
       <article class="app">
@@ -109,12 +125,12 @@
       </article>
 
       <article class="app">
-        <div class="icon placeholder" aria-hidden="true">K</div>
+        <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/5b/cb/095bcbd9-3846-37c2-8acd-d570dbd2bb65/AppIcon-0-0-1x_U007epad-0-1-85-220.png/144x144bb.jpg" alt="Kidsnooze icon">
         <div class="info">
-          <h2>KidSnooze</h2>
-          <p>Bedtime stories, white noise and a baby monitor in one app.</p>
+          <h2>Kidsnooze: Bedtime Stories</h2>
+          <p>Soothing bedtime stories and lullabies that fade into gentle white noise.</p>
         </div>
-        <div class="action"><span class="soon">Coming soon</span></div>
+        <div class="action"><a class="btn" href="https://apps.apple.com/app/id6819085138">App Store</a></div>
       </article>
     </section>
 
